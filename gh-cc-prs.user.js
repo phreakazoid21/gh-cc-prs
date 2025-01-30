@@ -6,6 +6,7 @@
 // @author       @phreakazoid21
 // @match        https://github.com/*/*/pull/*
 // @grant        GM_addStyle
+// @grant        GM_xmlhttpRequest
 // @resource   customCSS https://raw.githubusercontent.com/phreakazoid21/gh-cc-prs/main/resources/styles.css
 // @updateURL    https://raw.githubusercontent.com/phreakazoid21/gh-cc-prs/main/gh-cc-prs.user.js
 // @downloadURL  https://raw.githubusercontent.com/phreakazoid21/gh-cc-prs/main/gh-cc-prs.user.js
