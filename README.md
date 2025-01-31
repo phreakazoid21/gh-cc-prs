@@ -11,8 +11,9 @@ This Tampermonkey script adds a CC button to the GitHub comment box, making it e
 ## Installation
 
 - Install the Tampermonkey browser extension.
-- Create a new Tampermonkey script.
-- Paste the code from script.js into the script.
+- Got to [gh-cc-prs.user.js](https://github.com/phreakazoid21/gh-cc-prs/blob/main/gh-cc-prs.user.js)
+- Click on Raw
+- Tampermonkey should pick up the script automatically and offer you to install it
 
 ## Usage
 
