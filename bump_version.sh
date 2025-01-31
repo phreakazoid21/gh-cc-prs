@@ -43,6 +43,8 @@ git commit -m "Bump version to ${major}.${minor}.${patch}"
 
 # Create the new tag (optional)
 git tag "$new_version"
+git push origin "$(git branch --show-current)":"${new_version}"
+gh release create "${new_version}" --target "${new_version}" --notes-from-tag
 
 echo "Version bumped from ${version} to ${major}.${minor}.${patch}"
 echo "Remember to push the changes and the tag: git push origin main && git push origin $new_version"
