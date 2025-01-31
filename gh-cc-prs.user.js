@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Github PR CC Label Button
 // @namespace    https://alexbardasu.com
-// @version      1.0.2
+// @version      1.0.3
 // @description  Adds a button to add CC labels to PR comments (https://conventionalcomments.org)
 // @author       @phreakazoid21
 // @match        https://github.com/*/*/pull/*
@@ -53,7 +53,6 @@
         // Create the CC button
         const ccButton = document.createElement('button');
         ccButton.classList.add('cc-button');
-        ccButton.innerText = 'CC';
         ccButton.style.marginLeft = '10px'; // Adjust spacing as needed
 
         // Create the dropdown menu
