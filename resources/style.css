@@ -8,6 +8,9 @@ button.cc-button {
     padding: 2px;
     border: none;
     border-radius: 5px;
+
+    width: 2em;
+    height: 2em;
 }
 
 button.cc-button:hover {
