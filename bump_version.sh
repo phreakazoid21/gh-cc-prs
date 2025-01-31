@@ -16,13 +16,10 @@ component="$1"
 case "$component" in
     patch)
         patch=$((patch + 1))
-        minor=0 # Reset minor
-        major=0 # Reset major
       ;;
     minor)
         minor=$((minor + 1))
         patch=0  # Reset patch
-        major=0 # Reset major
       ;;
     major)
         major=$((major + 1))
@@ -38,7 +35,7 @@ esac
 new_version="v${major}.${minor}.${patch}"
 
 # Update the userscript (replace your-script-name.user.js with the actual filename)
-sed -i "s/\/\/ @version.*/\/\/ @version ${major}.${minor}.${patch}/" gh-cc-prs.user.js
+sed -i '' -E "s#(\/\/ @version[ ]+).+#\1${major}.${minor}.${patch}#g" gh-cc-prs.user.js
 
 # Commit the change (optional)
 git add gh-cc-prs.user.js
