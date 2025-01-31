@@ -14,11 +14,11 @@ button.cc-button {
 }
 
 button.cc-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: scale(1.05);
+    background-color: rgba(126, 34, 206, 0.4);
+    transform: scale(1.1);
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-button.cc-button span { /* Or target the specific element containing the text */
+button.cc-button span {
     display: none;
 }
