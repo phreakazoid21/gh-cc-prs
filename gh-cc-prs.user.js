@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Github PR CC Label Button
 // @namespace    https://alexbardasu.com
-// @version      1.0.7
+// @version      1.0.8
 // @description  Adds a button to add CC labels to PR comments (https://conventionalcomments.org)
 // @author       @phreakazoid21
 // @match        https://github.com/*/*/pull/*
@@ -10,7 +10,7 @@
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @grant        GM_xmlhttpRequest
-// @resource   customCSS https://raw.githubusercontent.com/phreakazoid21/gh-cc-prs/main/resources/style.css
+// @resource   CUSTOM_CSS https://raw.githubusercontent.com/phreakazoid21/gh-cc-prs/main/resources/style.css
 // @updateURL    https://raw.githubusercontent.com/phreakazoid21/gh-cc-prs/main/gh-cc-prs.user.js
 // @downloadURL  https://raw.githubusercontent.com/phreakazoid21/gh-cc-prs/main/gh-cc-prs.user.js
 // @supportURL   https://github.com/phreakazoid21/gh-cc-prs/issues
@@ -18,7 +18,7 @@
 
 (function() {
     'use strict';
-    const my_css = GM_getResourceText("customCSS");
+    const my_css = GM_getResourceText("CUSTOM_CSS");
     GM_addStyle(my_css);
 
     // Wait for the comment box to load
@@ -55,7 +55,6 @@
         // Create the CC button
         const ccButton = document.createElement('button');
         ccButton.classList.add('cc-button');
-        ccButton.style.marginLeft = '10px'; // Adjust spacing as needed
 
         // Create the dropdown menu
         const dropdown = document.createElement('ul');
