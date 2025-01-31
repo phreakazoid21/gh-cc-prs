@@ -9,8 +9,8 @@ button.cc-button {
     border: none;
     border-radius: 5px;
 
-    width: 2em;
-    height: 2em;
+    width: 4em;
+    height: 4em;
 }
 
 button.cc-button:hover {
