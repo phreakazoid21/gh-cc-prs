@@ -1,7 +1,7 @@
 /* CC Button */
 button.cc-button {
 	background-color: none;
-	background-image: url("https://raw.githubusercontent.com/phreakazoid21/gh-cc-prs/main/resources/cc.png");
+	background-image: url("https://raw.githubusercontent.com/phreakazoid21/gh-cc-prs/refs/heads/main/resources/cc.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
