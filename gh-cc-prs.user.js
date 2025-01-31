@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Github PR CC Label Button
 // @namespace    https://alexbardasu.com
-// @version      1.0.5
+// @version      1.0.6
 // @description  Adds a button to add CC labels to PR comments (https://conventionalcomments.org)
 // @author       @phreakazoid21
 // @match        https://github.com/*/*/pull/*

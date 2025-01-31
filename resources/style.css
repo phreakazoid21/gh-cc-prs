@@ -1,12 +1,13 @@
 /* CC Button */
 button.cc-button {
+	background-color: none;
 	background-image: url("https://raw.githubusercontent.com/phreakazoid21/gh-cc-prs/main/resources/cc.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     padding: 2px;
     border: none;
-    /* ... other styles */
+    border-radius: 5px;
 }
 
 button.cc-button:hover {
