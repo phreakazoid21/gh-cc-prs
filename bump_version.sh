@@ -3,7 +3,7 @@
 # Script to bump the version in a userscript, taking an argument for the component
 
 # Get the latest tag (assuming semantic versioning like v1.2.3)
-latest_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
+latest_tag=$(git tag -l | tail -n 1 || echo "v0.0.0")
 
 # Extract the version number
 version="${latest_tag#v}"
@@ -44,6 +44,6 @@ git commit -m "Bump version to ${major}.${minor}.${patch}"
 # Create the new tag (optional)
 git tag "$new_version"
 
-echo "Version bumped to ${major}.${minor}.${patch}"
+echo "Version bumped from ${version} to ${major}.${minor}.${patch}"
 echo "Remember to push the changes and the tag: git push origin main && git push origin $new_version"
 
