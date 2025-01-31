@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         Github PR CC Label Button
 // @namespace    https://alexbardasu.com
-// @version      1.0.3
+// @version      1.0.4
 // @description  Adds a button to add CC labels to PR comments (https://conventionalcomments.org)
 // @author       @phreakazoid21
 // @match        https://github.com/*/*/pull/*
 // @grant        GM_addStyle
 // @grant        GM_xmlhttpRequest
 // @grant        GM_getResourceText
-// @resource   customCSS https://raw.githubusercontent.com/phreakazoid21/gh-cc-prs/main/resources/styles.css
+// @resource   customCSS https://raw.githubusercontent.com/phreakazoid21/gh-cc-prs/main/resources/style.css
 // @updateURL    https://raw.githubusercontent.com/phreakazoid21/gh-cc-prs/main/gh-cc-prs.user.js
 // @downloadURL  https://raw.githubusercontent.com/phreakazoid21/gh-cc-prs/main/gh-cc-prs.user.js
 // @supportURL   https://github.com/phreakazoid21/gh-cc-prs/issues
